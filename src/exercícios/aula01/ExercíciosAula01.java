@@ -25,6 +25,10 @@ public class ExercíciosAula01 {
         {
             JOptionPane.showMessageDialog(null,"Formato digitado incorreto","ERRO",JOptionPane.ERROR_MESSAGE);
         }
+        catch(NullPointerException ex)
+        {
+            JOptionPane.showMessageDialog(null,"Não foi inserido um formato correto","ERRO",JOptionPane.ERROR_MESSAGE);
+        }
     }
 
 }
