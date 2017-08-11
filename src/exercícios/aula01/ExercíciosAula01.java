@@ -16,10 +16,11 @@ public class ExercíciosAula01 {
             comprimento = Float.parseFloat(entrada);
             entrada = JOptionPane.showInputDialog("Digite a largura do pacote");
             comprimento = Float.parseFloat(entrada);
+            JOptionPane.showMessageDialog(null,"O volume do pacote é",JOptionPane.INFORMATION_MESSAGE);
         }
         catch(NumberFormatException ex)
         {
-            
+            JOptionPane.showMessageDialog(null,"Formato digitado incorreto","ERRO",JOptionPane.ERROR_MESSAGE);
         }
     }
 
