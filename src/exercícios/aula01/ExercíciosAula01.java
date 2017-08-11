@@ -12,11 +12,14 @@ public class ExercíciosAula01 {
             String entrada;
             entrada = JOptionPane.showInputDialog("Digite a largura do pacote");
             largura = Float.parseFloat(entrada);
-            entrada = JOptionPane.showInputDialog("Digite a largura do pacote");
+            entrada = JOptionPane.showInputDialog("Digite a comprimento do pacote");
             comprimento = Float.parseFloat(entrada);
-            entrada = JOptionPane.showInputDialog("Digite a largura do pacote");
-            comprimento = Float.parseFloat(entrada);
-            JOptionPane.showMessageDialog(null,"O volume do pacote é",JOptionPane.INFORMATION_MESSAGE);
+            entrada = JOptionPane.showInputDialog("Digite a altura do pacote");
+            altura = Float.parseFloat(entrada);
+            JOptionPane.showMessageDialog(null,"largura x comprimento x altura =" + 
+                    (largura*comprimento*altura),
+                    "O volume do pacote é",
+                    JOptionPane.INFORMATION_MESSAGE);
         }
         catch(NumberFormatException ex)
         {
